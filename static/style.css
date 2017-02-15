@@ -59,6 +59,25 @@ a:visited {
 
 /* Classes */
 
+ul.language {
+	float: left;
+	margin: 0; padding: 0;
+}
+ul.language li {
+	display: none;
+}
+ul.language li a img {
+	width: 30px; height: 20px;
+	margin: 0 8px 4px 0;
+	opacity: 0.5;
+}
+ul.language:hover li, ul.language li.active {
+	display: inline-block;
+}
+ul.language li a:hover img, ul.language li.active a img {
+	opacity: 1.0;
+}
+
 ul.navi {
 	margin: 0; padding: 0;
 	list-style-type: none;
@@ -231,6 +250,9 @@ footer .resources .center {
 }
 
 @media screen and (max-width: 600px) {
+	ul.language li, ul.language:hover li, ul.language li.active {
+		display: block;
+	}
 	.download-top {
 		display: none;
 	}

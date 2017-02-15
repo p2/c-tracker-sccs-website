@@ -27,6 +27,11 @@
 <body>
 	<header>
 		<div>
+			<ul class="language">
+				<li{% if 'en' == lang %} class="active"{% endif %}><a href="../en.lproj/{{ target }}"><img src="../static/en.svg" alt="en"></a></li>
+				<li{% if 'de' == lang %} class="active"{% endif %}><a href="../de.lproj/{{ target }}"><img src="../static/de.svg" alt="de"></a></li>
+				<li{% if 'fr' == lang %} class="active"{% endif %}><a href="../fr.lproj/{{ target }}"><img src="../static/fr.svg" alt="fr"></a></li>
+			</ul>
 			<ul class="navi">
 				<!--li><a href="http://c-tracker.tumblr.com">Did you know?</a></li-->
 				<li><a href="team.html">Team</a></li>
@@ -43,7 +48,7 @@
 			</a>
 			<p id="logo">
 				<a href="index.html">
-					<img id="icon" src="../stacic/Icon-200.png" srcset="../static/Icon-200@2x.png 2x, ../static/Icon-200@3x.png 3x" alt="">
+					<img id="icon" src="../static/Icon-200.png" srcset="../static/Icon-200@2x.png 2x, ../static/Icon-200@3x.png 3x" alt="">
 					<img src="../static/C-Tracker.png" srcset="../static/C-Tracker@2x.png 2x, ../static/C-Tracker@3x.png 3x" alt="C Tracker">
 				</a>
 			</p>

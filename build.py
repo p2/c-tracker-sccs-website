@@ -60,7 +60,8 @@ def read_content(source):
 
 # apply content and title to _template
 def dump_content_to(content, title, langdir, target):
-	_template.stream(title=title, content=content) \
+	lang = os.path.splitext(langdir)[0]
+	_template.stream(title=title, content=content, lang=lang, target=target) \
 		.dump(os.path.join(_target, langdir, target))
 
 if '__main__' == __name__:
