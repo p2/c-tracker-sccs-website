@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C Tracker SCCS</title>
+</head>
+<body>
+	<ul>
+		<li><a href="en.lproj/index.html">English</a></li>
+		<li><a href="de.lproj/index.html">Deutsch</a></li>
+		<li><a href="fr.lproj/index.html">Français</a></li>
+	</ul>
+	<script type="text/javascript">
+	var lang = window.navigator.languages ? window.navigator.languages[0] : null;
+		lang = lang || window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage;
+	if (lang.indexOf('-') !== -1) {
+		lang = lang.split('-')[0];
+	}
+	if (lang.indexOf('_') !== -1) {
+		lang = lang.split('_')[0];
+	}
+	if (!(lang in ['en', 'de', 'fr'])) {
+		lang = 'en';
+	}
+	window.location.href = lang + '.lproj/index.html';
+	</script>
+</body>

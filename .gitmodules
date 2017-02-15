@@ -1,0 +1,3 @@
+[submodule "c-tracker-sccs-content"]
+	path = c-tracker-sccs-content
+	url = https://github.com/usz-rdsc/c-tracker-sccs-content.git

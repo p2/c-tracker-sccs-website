@@ -1,0 +1,245 @@
+
+html, body {
+	margin: 0; padding: 0;
+	color: rgb(59,55,55);
+	background-color: rgb(201,209,211);
+}
+body {
+	font: normal 400 14pt/1.4 "Georgia Pro", Georgia, serif;
+}
+h1, h2, h3, h4, h5 {
+	font-family: Delius, serif; font-weight: 500;
+}
+h1 {
+	clear: both;
+	margin: 1.5em 0 0.6em;
+}
+h2 {
+	margin: 1.5em 0 0.7em;
+}
+p {
+	margin: 0.75em 0 0;
+}
+a {
+	text-decoration: none;
+	color: rgb(153,24,24);
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	-webkit-text-decoration-style: dotted; text-decoration-style: dotted;
+}
+
+#container {
+	position: relative;
+	min-height: 70%;
+	padding: 0 1.5em 4em;
+	background: rgb(247,247,247);
+}
+
+.content {
+	max-width: 800px;
+	margin: 0 auto; padding: 0;
+}
+.content.main {
+	position: relative;
+	padding: 0 0 2em;
+}
+
+#logo {
+	margin: 0; padding-top: 2.5em;
+}
+#icon {
+	width: 200px; height: 200px;
+	margin-right: 3em;
+	border: 1px solid rgba(59,55,55,0.5); border-radius: 35px;
+}
+
+
+/* Classes */
+
+ul.navi {
+	margin: 0; padding: 0;
+	list-style-type: none;
+	color: rgba(255,255,255,0.5);
+}
+.navi li:before, .navi li:hover:before, .navi li::before, .navi li:hover::before {
+	content: "•";
+	margin: 0 0.5em;
+	text-decoration: none;
+}
+
+.intro {
+	margin-top: 2em;
+	font-size: 1.2em; color: rgba(59,55,55,0.5);
+}
+
+.video {
+	margin: 1.5em 0;
+}
+.iframe {
+	position: relative;
+}
+.iframe .ratio {
+	display: block;
+	width: 100%; height: auto;
+}
+.iframe iframe {
+	position: absolute;
+	top: 0; left: 0; width: 100%; height: 100%;
+}
+
+.float-left {
+	float: left;
+	margin: 0 2em 0.5em 0;
+	width: 220px; height: 220px;
+}
+
+.float-right {
+	float: right;
+	margin: 0 0 0.5em 2em;
+	width: 220px; height: 220px;
+}
+
+.download {
+	margin-top: 5em; text-align: center;
+}
+.download-top {
+	position: absolute;
+	top: 2.5em; right: 0; width: 150px;
+}
+.appstore {
+	width: 180px;
+}
+.download-top .appstore {
+	width: 100%;
+}
+
+/* Header & Footer */
+header {
+	background-color: rgb(59,55,55);
+}
+header div {
+	max-width: 800px;
+	margin: 0 auto; padding: 0.75em 0 0.5em;
+	text-align: right;
+	font: normal 300 15pt/1.4 "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header div a {
+	color: rgb(247,247,247);
+}
+
+footer {
+	min-height: 6em;
+	margin: 0; padding: 2em 0 4em;
+	font-size: 0.8em; text-align: center;
+	border-top: 1px solid rgba(59,55,55,0.5);
+}
+footer > p {
+	margin-top: 2em;
+}
+footer > p:first-child {
+	margin-top: 0;
+}
+footer .resources {
+	margin-bottom: 4em;
+	display: -ms-flexbox; display: flex;
+	line-height: 200%;
+}
+footer .resources p {
+	width: 50%;
+	margin: 0; padding: 1em 0;
+	text-align: right;
+}
+footer .resources p:last-child {
+	text-align: left;
+}
+footer .resources .center {
+	width: 2px;
+	margin: 0 2em; padding: 0;
+	background-color: rgba(59,55,55,0.5);
+}
+
+
+/* Dynamic Layout */
+
+/* phones */
+@media screen and (max-width: 480px) {
+	body {
+		font-size: 12pt;
+	}
+	h1 {
+		font-size: 1.7em;
+	}
+	header div {
+		padding-left: 15px; padding-right: 15px;
+		font-size: 13pt;
+	}
+	#container {
+		padding: 0 1em 2em;
+	}
+	#logo img {
+		width: 50%;
+	}
+	#logo img#icon {
+		width: 100px; height: 100px;
+		margin-right: 1em;
+		border-radius: 18px;
+	}
+	.float-left {
+		width: 110px; height: 110px;
+	}
+	.float-right {
+		width: 110px; height: 110px;
+	}
+	.download {
+		margin-top: 3em;
+	}
+	.institute {
+		width: 380px; max-width: 80%;
+	}
+}
+
+@media screen and (max-width: 350px) {
+}
+
+/* tablets and up */
+@media screen and (min-width: 480px) {
+	.navi li {
+		display: inline-block;
+	}
+	.navi li:first-child:before, .navi li:first-child::before {
+		content: "";
+	}
+}
+
+/* tablets */
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+	body {
+		font-size: 12pt;
+	}
+	h1 {
+		font-size: 1.7em;
+	}
+	header div {
+		padding: 0.5em 20px 0.33em;
+		font-size: 13pt;
+	}
+	#logo img {
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.download-top {
+		display: none;
+	}
+}
+
+/* standard */
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+}
+@media screen and (min-width: 3000px) {
+}
+
+
