@@ -143,7 +143,7 @@ header div {
 	max-width: 800px;
 	margin: 0 auto; padding: 0.75em 0 0.5em;
 	text-align: right;
-	font: normal 300 15pt/1.4 "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: normal 300 15pt/1.4 "Helvetica Neue", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 header div a {
 	color: rgb(247,247,247);
@@ -152,7 +152,7 @@ header div a {
 footer {
 	min-height: 6em;
 	margin: 0; padding: 2em 0 4em;
-	font-size: 0.8em; text-align: center;
+	font-size: 0.8em; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-weight: 300; text-align: center;
 	border-top: 1px solid rgba(59,55,55,0.5);
 }
 footer > p {
@@ -175,7 +175,7 @@ footer .resources p:last-child {
 	text-align: left;
 }
 footer .resources .center {
-	width: 2px;
+	width: 1px;
 	margin: 0 2em; padding: 0;
 	background-color: rgba(59,55,55,0.5);
 }
@@ -254,7 +254,7 @@ footer .resources .center {
 		display: block;
 	}
 	.download-top {
-		display: none;
+		width: 120px;
 	}
 }
 
