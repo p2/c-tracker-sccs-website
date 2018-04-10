@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 #
 #  Uses HTML data from _source and renders them, using Jinja2, into _target
 #
